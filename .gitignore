@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 外付けドライブなどで生成されることがある
+._*
+
+# macOS のメタデータ
+.Spotlight-V100
+.Trashes
+*.swp
+
+# Node / npm / Yarn
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build / Dist
+dist/
+build/
+out/
+
+# IDE / Editor
+*.log
+.vscode/
+.idea/
+
+# Env files
+.env
+.env.*
