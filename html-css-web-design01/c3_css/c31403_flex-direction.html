@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>レイアウトを組もう</title>
+    <meta
+      name="description"
+      content="子要素の並ぶ向き「flex-direction プロパティ」"
+    />
+    <style>
+      @charset "UTF-8";
+      .container {
+        /* 縦並びの要素を横並びに */
+        display: flex;
+        /* 右から左(初期値の row と逆) */
+        /* flex-direction: row-reverse; */
+        /* 上から下(block との違い margin のマージがなく子要素配置指定する) */
+        flex-direction: column;
+      }
+      .item {
+        background: #0bd;
+        color: #fff;
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+    </div>
+  </body>
+</html>

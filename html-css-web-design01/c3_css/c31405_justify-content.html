@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>レイアウトを組もう</title>
+    <meta
+      name="description"
+      content="水平方向の揃え 「justify-content プロパティ」"
+    />
+    <style>
+      @charset "UTF-8";
+      .container {
+        display: flex;
+        /* 初期値は flex-start. 中央は center. 右揃え flex-end. */
+        /* 要素両サイド均等配置 */
+        justify-content: space-around;
+        /* 両端詰め間は均等配置 */
+        /* justify-content: space-between; */
+      }
+      .item {
+        background: #0bd;
+        color: #fff;
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+    </div>
+  </body>
+</html>

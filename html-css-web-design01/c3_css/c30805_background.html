@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>背景を彩ろう</title>
+    <meta
+      name="description"
+      content="背景画像の大きさを指定「background-sizeプロパティ」 contain"
+    />
+    <style>
+      @charset "UTF-8";
+      div {
+        background-image: url(../images/bg-airplane.jpg);
+        background-repeat: no-repeat;
+        /* 画像の縦横比を保持して切れないように表示(領域の不足部分に余白) */
+        background-size: contain;
+        height: 100vh;
+      }
+      p {
+        text-align: center;
+        padding-top: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <p>背景画像の設置！</p>
+    </div>
+  </body>
+</html>

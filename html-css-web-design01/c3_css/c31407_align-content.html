@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>レイアウトを組もう</title>
+    <meta
+      name="description"
+      content="複数行にした時の揃え 「align-content プロパティ」"
+    />
+    <style>
+      @charset "UTF-8";
+      .container {
+          display: flex;
+          flex-wrap: wrap; /* 折り返さないと align-content は無効になる */
+          /* 折り返しが複数行の行の揃え方 初期値 stretch で親要素の高さ一杯 */
+          /* align-content: stretch; */
+          /* 上揃え flex-start, 中央 center, 下揃え */
+          /* 両端詰め間均等 */
+          /* align-content: space-between; */
+          /* 要素の両サイド均等(重複しない) */
+          align-content: space-around;
+          height: 300px;
+          background: beige; /* 高さ確認用。 */
+      }
+      .item {
+        background: #0bd;
+        color: #fff;
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+      <div class="item">Item 7</div>
+      <div class="item">Item 8</div>
+      <div class="item">Item 9</div>
+      <div class="item">Item 10</div>
+      <div class="item">Item 11</div>
+      <div class="item">Item 12</div>
+      <div class="item">Item 13</div>
+      <div class="item">Item 14</div>
+      <div class="item">Item 15</div>
+      <div class="item">Item 16</div>
+    </div>
+  </body>
+</html>
