@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>レイアウトを組もう</title>
+    <meta
+      name="description"
+      content="グリッドアイテム(子要素)の横幅「grid-template-columns プロパティ」"
+    />
+    <style>
+      @charset "UTF-8";
+      .container {
+        display: grid; /* grid は flex と違い縦並びだが margin のマージがないのは同じ */
+        /* 幅と個数指定 */
+        /* 200px 幅を３つ配置 */
+        /* grid-template-columns: 200px 200px 200px; */
+        /* fraction で比率 1:1:1 指定で親要素幅を埋めるように配置  */
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px; /* 要素同士の間に余白、margin との違いは要素が隣り合わない外側に余白が付かない。そのため flex と gap で通常 gap を使い、個別調整に margin を使う。 */
+        background: beige;
+      }
+      .item {
+        background: #0bd;
+        color: #fff;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </div>
+  </body>
+</html>
