@@ -141,6 +141,13 @@ article {
 .post-cat {
   margin-left: 120px;
 }
+/* 記事部分(コンテンツ) */
+article img {
+  margin-bottom: 20px;
+}
+article p {
+  margin-bottom: 1rem;
+}
 
 /* サイドバー */
 aside {
