@@ -194,8 +194,12 @@ footer p {
   .page-title {
     font-size: 2.5rem;
   }
+  .page-header {
+    flex-direction: column;
+    align-items: center;
+  }
 
-  /* HEADER ------- */
+  /* HEADER ----- */
   .main-nav {
     font-size: 1rem;
     margin-top: 10px;
@@ -207,8 +211,17 @@ footer p {
     margin-top: 20px;
   }
 
-  /* HOME --------- */
+  /* HOME ------ */
   .home-content {
     margin-top: 20%;
+  }
+
+  /* NEWS ------ */
+  .news-contents {
+    flex-direction: column;
+  }
+  article,
+  aside {
+    width: 100;
   }
 }
