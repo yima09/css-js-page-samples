@@ -87,3 +87,13 @@ img {
   font-size: 1.125rem;
   margin: 10px 0 42px;
 }
+
+/* NEWS -------------------------------- */
+#news {
+  background-image: url(../images/news-bg.jpg);
+  height: 270px;
+  margin-bottom: 40px;
+}
+#news .page-title {
+  text-align: center;
+}
