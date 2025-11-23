@@ -211,6 +211,45 @@ aside p {
   object-fit: cover;
 }
 
+/* CONTACT --------------------------- */
+#contact {
+  background-image: url(../images/contact-bg.jpg);
+  min-height: 100vh;
+}
+/* フォーム */
+form div {
+  margin-bottom: 14px;
+}
+label {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  display: block;
+}
+input[type='text'],
+input[type='email'],
+textarea {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+input[type='text'],
+input[type='email'] {
+  width: 100%;
+  max-width: 240px;
+}
+textarea {
+  width: 100%;
+  max-width: 480px;
+  height: 6rem;
+}
+input[type='submit'] {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
 /* FOOTER ---------------------------- */
 footer {
   background: #432;
@@ -301,5 +340,16 @@ footer p {
   }
   .big-box img {
     height: auto;
+  }
+
+  /* CONTACT -- */
+  #contact .page-title {
+    margin-top: 40px;
+  }
+  /* form */
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    max-width: 100%;
   }
 }
