@@ -44,6 +44,10 @@ img {
 .button:hover {
   background: #0090aa;
 }
+/* iframe */
+iframe {
+  width: 100%;
+}
 
 /* HEADER ------------------------------- */
 .page-header {
@@ -248,6 +252,24 @@ input[type='submit'] {
   border: none;
   cursor: pointer;
   line-height: 1;
+}
+
+/* 店舗情報・地図 */
+#location {
+  padding: 4% 0;
+}
+#location .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.location-info {
+  width: 22%;
+}
+.location-info p {
+  padding: 12px 10px;
+}
+.location-map {
+  width: 74%;
 }
 
 /* FOOTER ---------------------------- */
