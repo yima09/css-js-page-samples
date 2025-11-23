@@ -13,6 +13,7 @@ body {
 /* COMMON
 ================================================ */
 .title {
+  font-family: 'Dancing Script', cursive;
   font-size: 7rem;
   margin-bottom: 2rem;
 }
