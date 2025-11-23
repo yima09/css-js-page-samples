@@ -272,6 +272,22 @@ input[type='submit'] {
   width: 74%;
 }
 
+/* SNS */
+#sns {
+  background: #faf7f0;
+  padding: 4% 0;
+}
+#sns .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#sns .sub-title {
+  margin-bottom: 30px;
+}
+.sns-box {
+  width: 30%;
+}
+
 /* FOOTER ---------------------------- */
 footer {
   background: #432;
