@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>低画質の背景画像デモ：ドット</title>
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .wrapper {
+        /* 文字設定 */
+        font-family: 'Sawarabi Mincho', sans-serif;
+        font-size: 4rem;
+        text-align: center;
+        color: #fff;
+
+        /* 中央揃え */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* 背景画像 */
+        /* ドット柄を重ねる記述(画像順が逆だと表示されない) */
+        background-image: url(images/column1-3dots.svg), url(images/column1-1bg.jpg);
+        background-size: 10px 10px, cover;
+        height: 100vh;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h1>あの日見た、空。</h1>
+    </div>
+  </body>
+</html>
