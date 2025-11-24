@@ -84,3 +84,22 @@ section {
 .btn:hover {
   background: #777;
 }
+/* sns アイコン */
+.contact-sns {
+  display: flex;
+  justify-content: center;
+}
+.contact-sns a {
+  background: #fff;
+  width: 3.75rem;
+  height: 3.75rem;
+  display: inline-block;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: 0.75rem 0 0 0.125rem;
+  color: #555;
+}
+.contact-sns a:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
