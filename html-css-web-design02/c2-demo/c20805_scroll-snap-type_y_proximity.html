@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>中間地点にいる場合はその位置で停止 proximity デモ</title>
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <style>
+      body {
+        font-size: 4rem;
+        text-align: center;
+        color: #fff;
+      }
+
+      /* スクロールスナップの設定 */
+      .container {
+        overflow: auto;
+        scroll-snap-type: y proximity;
+        height: 100vh;
+      }
+      .area {
+        scroll-snap-align: start;
+        height: 100vh;
+      }
+
+      /* 各エリアの背景色 */
+      .area:nth-child(even) {
+        background-color: #ffce53;
+      }
+      .area:nth-child(odd) {
+        background-color: #0bd;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="area">1</div>
+      <div class="area">2</div>
+      <div class="area">3</div>
+      <div class="area">4</div>
+      <div class="area">5</div>
+    </div>
+  </body>
+</html>
