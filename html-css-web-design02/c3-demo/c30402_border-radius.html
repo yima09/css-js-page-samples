@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>四つ葉のクローバーの形で画像を表示 デモ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <style>
+      .clover {
+        /* 配置指定。横並び; 折り返し; 幅指定; 中央揃え; */
+        display: flex;
+        flex-wrap: wrap;
+        width: 410px;
+        margin: 20px auto;
+        /* 背景画像は配置確認用 */
+        /* background: pink; */
+        gap: 10px;
+      }
+      .clover img {
+        width: 200px;
+      }
+      .spring {
+        /* 右下だけ丸めない */
+        border-radius: 50% 50% 0 50%;
+      }
+      .summer {
+        /* 左下だけ丸めない */
+        border-radius: 50% 50% 50% 0;
+      }
+      .autumn {
+        border-radius: 50% 0 50% 50%;
+      }
+      .winter {
+        border-radius: 0 50% 50% 50%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="clover">
+      <img class="spring" src="images/spring.jpg" alt="" />
+      <img class="summer" src="images/summer.jpg" alt="" />
+      <img class="autumn" src="images/autumn.jpg" alt="" />
+      <img class="winter" src="images/winter.jpg" alt="" />
+    </div>
+  </body>
+</html>

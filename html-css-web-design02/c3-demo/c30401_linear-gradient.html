@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>蛍光ペンで線を引いたような見出し デモ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <style>
+      body {
+        padding: 2rem;
+      }
+      /* 蛍光ペンで線を引いたような見出し */
+      h1 {
+        font-size: 2rem;
+        font-family: sans-serif;
+        font-weight: bold;
+        display: inline-block;
+        /* 背景上半分を透明 */
+        background-image: linear-gradient(transparent 50%, #ff6 50%);
+        padding-bottom: 0.25rem;
+      }
+
+      /* 縞模様の下線 */
+      .post-title {
+        display: inline-block;
+        padding-bottom: 10px;
+        background-image: linear-gradient(
+          45deg,
+          #fff 30%,
+          #ccc 30%,
+          #ccc 50%,
+          #fff 50%,
+          #fff 80%,
+          #ccc 80%,
+          #ccc 100%
+        );
+        /* 縞模様の太さが変わる */
+        background-size: 6px 6px;
+        margin: 1.5rem 0;
+      }
+      .post-title h2 {
+        /* 背景を入れないと縞模様が文字に重なる */
+        background: #fff;
+        /* 下余白で下線の位置が変わる */
+        padding: 0 0.5rem 0.875rem;
+        font-size: 1.5rem;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        font-weight: 500;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h1>蛍光ペンで線を引いたような見出し</h1>
+    </div>
+
+    <div class="post-title">
+      <h2>
+        <a href="#"> 見出しに縞模様の下線を加える方法 </a>
+      </h2>
+    </div>
+  </body>
+</html>

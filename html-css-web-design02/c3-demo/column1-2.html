@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>絶対位置を決める値 absolute デモ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      div {
+        padding: 1rem;
+        display: inline-block;
+      }
+      .absolute {
+        background: #0bd;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+      }
+      .parent {
+        background: #ddf5c4;
+        width: 50vw;
+        height: 50vh;
+        position: relative;
+      }
+      .child {
+        background: #a0d469;
+        position: absolute;
+        /* 親要素に relative が記述されているので、親要素の最も下に配置される。relative がないと画面最下に配置。 */
+        left: 100px;
+        bottom: 0;
+      }
+      p span {
+        position: relative;
+        top: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="absolute">画面サイズを基準にしたボックス</div>
+    <div class="parent">
+      <div class="child">親要素を基準にしたボックス</div>
+    </div>
+    <p>あい<span>う</span>えお</p>
+  </body>
+</html>
