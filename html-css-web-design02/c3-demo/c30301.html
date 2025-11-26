@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>メディアクエリー max-height デモ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <style>
+      body {
+        line-height: 1.6;
+      }
+      header {
+        background: #0bd;
+        display: flex;
+        padding: 2.5rem 1rem;
+      }
+      article {
+        padding: 1rem;
+      }
+      h1 {
+        margin-right: auto;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #fff;
+      }
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      button {
+        background: #fff;
+        border-radius: 5px;
+        padding: 1rem;
+        color: #0bd;
+      }
+      p {
+        margin-bottom: 1rem;
+      }
+
+      /* 高さを基準にしたメディアクエリー */
+      @media (max-height: 420px) {
+        header {
+          padding: 1rem;
+        }
+        h1 {
+          font-size: 1.5rem;
+        }
+        button {
+          padding: 0.5rem 1rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Sample Website</h1>
+      <button>メニュー</button>
+    </header>
+    <article>
+      <h2>坊っちゃん</h2>
+      <p>
+        親譲りの無鉄砲で小供の時から損ばかりしている。
+        小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+        なぜそんな無闇をしたと聞く人があるかも知れぬ。 別段深い理由でもない。
+        新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、
+        そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。
+        小使に負ぶさって帰って来た時、おやじが大きな眼をして
+        二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、
+        この次は抜かさずに飛んで見せますと答えた。
+      </p>
+      <p>
+        親譲りの無鉄砲で小供の時から損ばかりしている。
+        小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+        なぜそんな無闇をしたと聞く人があるかも知れぬ。 別段深い理由でもない。
+        新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、
+        そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。
+        小使に負ぶさって帰って来た時、おやじが大きな眼をして
+        二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、
+        この次は抜かさずに飛んで見せますと答えた。（青空文庫より）
+      </p>
+    </article>
+  </body>
+</html>
