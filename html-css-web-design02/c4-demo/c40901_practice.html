@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>4章 練習問題 ベースファイル</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"
+    />
+    <style>
+      /* 共通部分 */
+      html {
+        font-size: 100%;
+      }
+      body {
+        color: #555;
+        font-family: sans-serif;
+      }
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 1rem 0 2rem;
+      }
+
+      /* 表 */
+      table {
+        margin: 0 auto 2rem;
+        text-align: center;
+      }
+      th,
+      td {
+        padding: 1.25rem;
+        display: table-cell;
+      }
+      th {
+        width: 30%;
+        vertical-align: middle;
+      }
+      td {
+        width: 70%;
+      }
+
+      /* 奇数行の背景色を #fee、偶数行の背景色を #ffe */
+
+      /* グラフ */
+      .chart {
+        margin: 0 auto;
+      }
+      .ct-label {
+        font-size: 1rem;
+        fill: #fff;
+      }
+      .ct-series-a .ct-slice-pie {
+        fill: #ff5d5a;
+      }
+      .ct-series-b .ct-slice-pie {
+        fill: #540e20;
+      }
+      .ct-series-c .ct-slice-pie {
+        fill: #fa4b6c;
+      }
+      .ct-series-d .ct-slice-pie {
+        fill: #bbb;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>みんなの好きな動物</h1>
+
+    <table>
+      <tr>
+        <th>猫</th>
+        <td>35%</td>
+      </tr>
+      <tr>
+        <th>犬</th>
+        <td>30%</td>
+      </tr>
+      <tr>
+        <th>きりん</th>
+        <td>20%</td>
+      </tr>
+      <tr>
+        <th>その他</th>
+        <td>15%</td>
+      </tr>
+    </table>
+
+    <div class="chart">
+      <div class="animal-chart"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script>
+      /*
+        - 猫 35%、犬 30%、きりん 20%、その他 15%
+        - 円グラフのオプションには 幅100%、高さ300px を指定
+      */
+    </script>
+  </body>
+</html>
