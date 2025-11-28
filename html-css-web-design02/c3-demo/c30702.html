@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>フッターを最下部に固定表示 デモ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        color: #333;
+        line-height: 1.6;
+        font-family: sans-serif;
+
+        display: flex;
+        flex-direction: column;
+      }
+      article {
+        flex: 1;
+        padding: 2rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      footer {
+        background: #0bd;
+        color: #fff;
+        text-align: center;
+        padding: 2rem 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <article>
+      <h1>自己紹介</h1>
+      <p>
+        Webデザイナー+WebデベロッパーのManaです。
+        日本で2年間グラフィックデザイナーとして働いた後、カナダ・バンクーバーにあるWeb制作の学校を卒業。
+        カナダやオーストラリア、イギリスの企業でWebデザイナーとして働きました。
+        現在はWebサイト制作のインストラクターとして教育関連頑張ってます。
+      </p>
+    </article>
+    <footer>
+      <p><small>&copy; 2020 Mana</small></p>
+    </footer>
+  </body>
+</html>
