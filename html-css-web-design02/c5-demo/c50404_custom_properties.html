@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      カスタムプロパティ：カスタムプロパティの中でカスタムプロパティを使う デモ
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <style>
+      :root {
+        --main-color: pink;
+        --sub-color: orange;
+        --bg-gradation: linear-gradient(var(--main-color), var(--sub-color))
+          fixed;
+      }
+      body {
+        background: var(--bg-gradation);
+      }
+    </style>
+  </head>
+
+  <body></body>
+</html>
