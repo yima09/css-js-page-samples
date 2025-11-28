@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>nth-child … 式による指定</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 1rem;
+      }
+      li {
+        margin: 1rem;
+        padding: 0.5rem;
+      }
+      li[class|='list'] {
+        background: pink;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul>
+      <li class="list">リストアイテム list</li>
+      <li class="list-a">リストアイテム list-a</li>
+      <li class="list-b">リストアイテム list-b</li>
+      <li class="item">リストアイテム item</li>
+    </ul>
+  </body>
+</html>
