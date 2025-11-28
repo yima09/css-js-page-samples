@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>数字を円で囲む デモ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <style>
+      ol li {
+        counter-increment: list;
+        margin-bottom: 0.25rem;
+        line-height: 1.25;
+      }
+      ol li::before {
+        content: counter(list);
+        color: #fff;
+        background: #0bd;
+        border-radius: 50%;
+        font-size: 0.75rem;
+        width: 1.25rem;
+        height: 1.25rem;
+        line-height: 1.75;
+        text-align: center;
+        display: inline-block;
+        margin-right: 0.25rem;
+        vertical-align: top;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ol>
+      <li>肥料ABC</li>
+      <li>D社 EFG肥料（HI配合のもの）</li>
+      <li>J社 KLM肥料</li>
+    </ol>
+  </body>
+</html>

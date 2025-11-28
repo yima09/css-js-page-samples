@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Font Awesomeを使ってマーカーをカスタマイズ デモ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <style>
+      li {
+        color: #666;
+      }
+      ul li::before {
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        content: '\f004';
+        color: #f66;
+      }
+    </style>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/ddcc811093.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <ul>
+      <li>バラの花言葉は「愛」</li>
+      <li>ピンクのバラは「完璧な幸せ」</li>
+      <li>白いバラは「私はあなたにふさわしい」</li>
+    </ul>
+  </body>
+</html>
