@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>transition: 基本 デモ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <style>
+      div {
+        background: #0bd;
+        padding: 1rem;
+        margin: 1rem;
+        width: 200px;
+        height: 200px;
+      }
+      div:hover {
+        background: #9d6;
+      }
+      .transition-1s {
+        transition: background 1s;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>アニメーションなし</div>
+    <div class="transition-1s">アニメーションあり</div>
+  </body>
+</html>
