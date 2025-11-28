@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>疑似要素で文字を表示する デモ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <style>
+      body {
+        font-family: sans-serif;
+        line-height: 1.7;
+        padding: 2rem;
+      }
+      .new::after {
+        content: 'NEW!';
+        font-size: 0.75rem;
+        background: #f99;
+        color: #fff;
+        padding: 5px;
+        margin-left: 5px;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul>
+      <li class="new">Runジャケット - 20,000円</li>
+      <li>Breezy Tシャツ - 4,800円</li>
+      <li>Happiest Tシャツ - 4,800円</li>
+      <li class="new">Weekend Sports バッグ - 12,000円</li>
+    </ul>
+  </body>
+</html>
