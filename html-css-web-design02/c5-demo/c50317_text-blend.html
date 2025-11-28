@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>ブレンドモード：画像とテキストを重ねる デモ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <style>
+      body {
+        background-image: url('images/hero.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        font-family: sans-serif;
+        line-height: 1.4;
+      }
+      h1 {
+        font-size: 6rem;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 16rem;
+        /* 要素にブレンドモードを加える場合のプロパティ */
+        mix-blend-mode: overlay;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Small Changes, <br />Big Results</h1>
+  </body>
+</html>
