@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Frappe Charts デモ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <style>
+      .chart-box {
+        margin: 0 auto;
+        width: 600px;
+        height: 600px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="chart-box">
+      <div id="chart"></div>
+    </div>
+
+    <script src="https://unpkg.com/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"></script>
+    <script>
+      const data = {
+        labels: ['4月', '5月', '6月', '7月'],
+        datasets: [
+          {
+            values: [68, 74, 70, 81],
+          },
+        ],
+      };
+      const chart = new frappe.Chart('#chart', {
+        title: '数学 テスト結果',
+        data: data,
+        type: 'line',
+      });
+    </script>
+  </body>
+</html>
