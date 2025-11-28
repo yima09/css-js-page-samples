@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>animation: カーソルを合わせるとキラリと光る画像 デモ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <style>
+      body {
+        padding: 1rem;
+        font-family: sans-serif;
+      }
+      img {
+        width: 400px;
+      }
+      img:hover {
+        animation: hover-flash 1s;
+      }
+      @keyframes hover-flash {
+        0% {
+          opacity: 0.2;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <img src="images/mesomeso.jpg" alt="お昼寝わんこ" />
+  </body>
+</html>

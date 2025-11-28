@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>animation: 3回上下に動くテキスト デモ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <style>
+      body {
+        padding: 1rem;
+        font-family: sans-serif;
+      }
+      .recommend {
+        color: tomato;
+        display: inline-block;
+        position: relative;
+        animation: recommend-animation 2s 3;
+      }
+      @keyframes recommend-animation {
+        0%,
+        50%,
+        100% {
+          top: 0;
+        }
+        25% {
+          top: -0.8rem;
+        }
+        75% {
+          top: -0.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <p class="recommend">\ おすすめ /</p>
+  </body>
+</html>
