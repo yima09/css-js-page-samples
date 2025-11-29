@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>clip-path：ひし形 デモ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <style>
+      div {
+        background: #0bd;
+        height: 100vh;
+        -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+        /* clip-path: polygon(
+          頂点ＡのＸ軸の位置, 頂点ＡのＹ軸の位置, 頂点ＢのＸ軸の位置, 頂点ＢのＹ軸の位置
+        ) */
+        clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div></div>
+  </body>
+</html>
