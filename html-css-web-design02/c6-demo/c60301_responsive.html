@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>レスポンシブ画像 デモ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- select="画像のファイルパス 画像の幅(w)" sizes は select 属性があるときに指定する(800px 以上では 1200px 画像を表示するが画像の最大幅は 800px で指定例) -->
+    <img
+      src="images/800.png"
+      srcset="images/400.png 400w, images/800.png 800w, images/1200.png 1200w"
+      sizes="(min-width: 800px) 800px, 100vw"
+      alt="デモ画像"
+    />
+  </body>
+</html>
