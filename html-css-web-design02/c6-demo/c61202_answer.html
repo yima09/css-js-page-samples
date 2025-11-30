@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>6章 練習問題 解答例</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous-basic.min.css"
+    />
+    <style>
+      /* 共通部分 */
+      html {
+        font-size: 100%;
+      }
+      body {
+        color: #555;
+        font-family: sans-serif;
+        text-align: center;
+      }
+      h1 {
+        font-size: 2rem;
+        margin: 1rem 0 3rem;
+      }
+      .gallery-img {
+        max-width: 300px;
+        transition: 0.3s;
+        /* 通常時は画像をセピアに*/
+        filter: sepia(100%);
+      }
+      /* 画像にカーソルをあわせるとカラーで表示させる */
+      .gallery-img:hover {
+        filter: sepia(0);
+
+        /* 画像を右に10°傾ける */
+        transform: rotate(10deg);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>みんなの好きな動物</h1>
+    <a class="lightbox" href="images/dog-1200.jpg">
+      <img class="gallery-img" src="images/dog-600.jpg" alt="お散歩わんこ" />
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous.min.js"></script>
+    <script>
+      /* ライトボックスで同一ページ内に画像を表示 */
+      /* 画像のみ表示 */
+      // new LuminousGallery(document.querySelectorAll(".lightbox"));
+
+      /* alt属性のテキストを画像の下に表示させる */
+      new LuminousGallery(
+        document.querySelectorAll('.lightbox'),
+        {},
+        {
+          caption: function (trigger) {
+            return trigger.querySelector('img').getAttribute('alt');
+          },
+        }
+      );
+    </script>
+  </body>
+</html>

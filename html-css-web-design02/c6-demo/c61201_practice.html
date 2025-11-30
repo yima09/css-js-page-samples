@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>6章 練習問題 ベースファイル</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous-basic.min.css"
+    />
+    <style>
+      /* 共通部分 */
+      html {
+        font-size: 100%;
+      }
+      body {
+        color: #555;
+        font-family: sans-serif;
+        text-align: center;
+      }
+      h1 {
+        font-size: 2rem;
+        margin: 1rem 0 3rem;
+      }
+      .gallery-img {
+        max-width: 300px;
+        transition: 0.3s;
+        /* 通常時は画像をセピアに*/
+      }
+      /* 画像にカーソルをあわせるとカラーで表示させる */
+      .gallery-img:hover {
+        /* 画像を右に10°傾ける */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>みんなの好きな動物</h1>
+    <a class="lightbox" href="images/dog-1200.jpg">
+      <img class="gallery-img" src="images/dog-600.jpg" alt="お散歩わんこ" />
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous.min.js"></script>
+    <script>
+      /* ライトボックスで同一ページ内に画像を表示 */
+      /* alt属性のテキストを画像の下に表示させる */
+    </script>
+  </body>
+</html>
