@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>AOS 個別にオプションをつける デモ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+      body {
+        padding: 2rem;
+      }
+      div {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <img
+        src="../c6-gallery_site/images/img1-800.jpg"
+        data-aos="flip-left"
+        alt="Sainte Chapelle"
+      />
+      <img
+        src="../c6-gallery_site/images/img2-800.jpg"
+        data-aos="flip-left"
+        data-aos-delay="200"
+        alt="Fushimi Inari Shrine"
+      />
+      <img
+        src="../c6-gallery_site/images/img3-800.jpg"
+        data-aos="flip-left"
+        data-aos-delay="400"
+        alt="The Ocean in Okinawa"
+      />
+      <img
+        src="../c6-gallery_site/images/img4-800.jpg"
+        data-aos="flip-left"
+        data-aos-delay="600"
+        alt="Rainbow Colored Ocean"
+      />
+      <img
+        src="../c6-gallery_site/images/img5-800.jpg"
+        data-aos="flip-left"
+        data-aos-delay="800"
+        alt="Île de la Cité"
+      />
+      <img
+        src="../c6-gallery_site/images/img6-800.jpg"
+        data-aos="flip-left"
+        data-aos-delay="1000"
+        alt="Night View in Otaru"
+      />
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // 開始を遅らせる(c61002)
+        duration: 1000
+      });
+    </script>
+  </body>
+</html>
