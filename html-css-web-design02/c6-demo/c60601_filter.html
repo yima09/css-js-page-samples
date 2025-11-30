@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>filter のぼかし - blur デモ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 2rem;
+      }
+      p {
+        margin-bottom: 1rem;
+      }
+      img {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 2rem;
+      }
+
+      .filter1 {
+        /*  */
+        filter: blur(2px) hue-rotate(30deg) drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.8));
+      }
+      .filter2 {
+        filter: blur(10px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>通常</p>
+    <img src="images/salad.jpg" alt="サラダ" />
+
+    <p>複数指定例 ぼかし 色相 影 この他は % で指定する<br>
+      filter: blur(2px) hue-rotate(30deg) drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.8));</p>
+    <img class="filter1" src="images/salad.jpg" alt="サラダ" />
+
+    <p>filter: blur(10px);</p>
+    <img class="filter2" src="images/salad.jpg" alt="サラダ" />
+  </body>
+</html>
