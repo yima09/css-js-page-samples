@@ -1,0 +1,12 @@
+.title {
+  color: #0bd;
+  // プロパティ名のネスト、結果 font-size
+  font: {
+    size: 2rem;
+    family: sans-serif;
+  }
+  margin: {
+    bottom: 20px;
+    left: 10px;
+  }
+}

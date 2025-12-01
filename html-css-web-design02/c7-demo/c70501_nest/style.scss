@@ -1,0 +1,10 @@
+.button {
+  background: #0bd;
+  &.mb {
+    margin-bottom: 20px;
+  }
+  // & で親セレクタを参照する。結果 .button.mb
+  &:hover {
+    background: #0090aa;
+  }
+}

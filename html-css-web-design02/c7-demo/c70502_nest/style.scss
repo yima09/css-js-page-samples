@@ -1,0 +1,12 @@
+.post {
+  margin-bottom: 20px;
+  // クラス名も & でネストに出来る。結果 .post_title
+  &-title {
+    font-size: 2rem;
+    padding-bottom: 10px;
+    color: #0bd;
+  }
+  &-date {
+    color: #ccc;
+  }
+}
