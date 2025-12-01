@@ -1,0 +1,18 @@
+// グラデーション使用例
+
+@mixin gradient-title($color1: #4db1ec, $color2: #b473bf) {
+  background: linear-gradient($color1, $color2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.post-title {
+  // 引数なしで初期値のグラデーション
+  @include gradient-title;
+}
+.about-title {
+  // 指定したグラデーション
+  @include gradient-title(#ff9f67, #ffd673);
+}

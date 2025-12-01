@@ -1,0 +1,10 @@
+@mixin circle($size) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+}
+
+div {
+  // 引数を渡す。複数渡すこともできる。
+  @include circle(60px);
+}

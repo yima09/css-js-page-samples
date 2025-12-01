@@ -1,0 +1,10 @@
+@mixin circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+div {
+  // 上記 mixin を呼び出す。
+  @include circle;
+}
