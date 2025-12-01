@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>calc - カスタムプロパティと組み合わせる デモ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <style>
+      div {
+        --number: 500;
+        width: calc(var(--number) * 1px);
+        background: #0bd;
+        padding: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <p>
+        `width: calc(var(--number) * 1px);`<br />単位なしカスタムプロパティと組み合わせる(掛ける)、<br />
+        幅 500px になる。
+      </p>
+    </div>
+  </body>
+</html>
